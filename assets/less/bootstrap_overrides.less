@@ -19,6 +19,7 @@
   .border-radius(0);
   overflow: none;
   margin-bottom: -10px;
+  position: relative;
 }
 
 .hero-unit h1 {
@@ -44,7 +45,6 @@
   border: 1px solid #ddd;
   padding: 20px;
   padding-right: 30px;
-  margin-left: 50px;
 }
 
 .citylist {
@@ -79,8 +79,10 @@
   background: url(../img/done.png) repeat-y 21px 0;
 }
 
-.halfdone {
-  background: url(../img/done.png) repeat-y 21px 0;
-  float: left;
-  z-index: 0;
+a.donate {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: #333;
 }
