@@ -156,11 +156,11 @@ li[class^="icon-"].icon-large:before,li[class*=" icon-"].icon-large:before{text-
 .content img{width:auto;margin-top:-5px;}
 .hero-unit{background:url(../img/tracks-large.png) no-repeat;color:#fff;padding:60px 0 10px 0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;overflow:none;margin-bottom:-10px;position:relative;}
 .hero-unit h1{font-family:FontAwesome,'Helvetica Neue',Helvetica,arial;font-weight:bold;text-align:center;font-size:45px;text-shadow:#000000 0px 0px 5px,#000000 1px 1px 0px,#000000 -1px -1px 0px;}
-.hero-unit p{color:#000;text-align:center;font-size:25px;position:relative;left:25px;top:-15px;text-shadow:#fff 0px 0px 3px;}
+.hero-unit p{text-align:center;font-size:25px;position:relative;left:25px;top:-15px;text-shadow:#000 0px 0px 3px;}
 .citylist-container{border:1px solid #ddd;padding:20px;padding-right:30px;}
-.citylist{font-size:22px;font-family:"Georgia";background:url(../img/rails.png) repeat-y;}
+.citylist{font-size:22px;font-family:"Georgia";background:url(../img/rails.png) repeat-y;text-shadow:0 1px 1px #bbb;}
 .citylist li{padding:18px 0 22px 80px;margin-left:-6px;}
-.citylist p{padding-left:10px;padding-top:5px;font-size:12px;color:#888;float:left;width:290px;font-weight:normal;line-height:1;}
+.citylist p{padding-left:10px;padding-top:5px;font-size:12px;color:#888;float:left;width:290px;font-weight:normal;line-height:1;text-shadow:none;}
 .current-city{background:url(../img/train.png) no-repeat;font-weight:bold;z-index:5;}
 .visited-city{background:url(../img/done.png) repeat-y 21px 0;}
 a.donate{position:absolute;top:10px;right:10px;font-size:16px;color:#333;}
