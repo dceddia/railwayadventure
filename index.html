@@ -33,7 +33,7 @@
   <body>
     <div class="container">
       <div class="hero-unit">
-        <a class="donate btn btn-warning btn-large" href="http://www.indiegogo.com/Trans-incidental-Railway-Journeys">Donate!</a>
+        <a id="donate_button" class="donate btn btn-warning btn-large" href="http://www.indiegogo.com/Trans-incidental-Railway-Journeys">Donate!</a>
         <h1>Trans-<br/>Incidental<br/>American Adventures</h1>
         <p class="offset5">via<br/>the Railways</p>
       </div>
@@ -64,10 +64,10 @@
         </div>
         <div class="span6 content">
           <h2>Adventure of a Lifetime</h2>
-          <p>Skippy Sund (<a href="http://twitter.com/skippyothewired">@skippyothewired</a>) is embarking on a remarkable railway adventure beginning <strong>April 28, 2012</strong>.</p>
-          <a href="http://skippyofthewired.posterous.com/"><img class="span1" src="assets/img/blog-icon-48.png"/></a><p>He'll be visiting each of the cities on the left for a few days, blogging his way across the U.S. and parts of Canada. Check out his <a href="http://skippyofthewired.posterous.com/">blog at Posterous</a>.</p>
-          <a href="http://twitter.com/skippyothewired"><img class="span1" src="assets/img/twitter.png"/></a><p>Reach out on Twitter (<a href="http://twitter.com/skippyothewired">@skippyothewired</a>), especially if he'll be in your city! (he's looking for folks to interview)</p>
-          <a href="http://www.indiegogo.com/Trans-incidental-Railway-Journeys"><img class="span1" src="assets/img/dollar.png"/></a><p><a href="http://www.indiegogo.com/Trans-incidental-Railway-Journeys">Donate via indiegogo</a>. Help support something awesome (and get some sweet perks with your donation).</p>
+          <p>Skippy Sund (<a id="twitter_name" href="http://twitter.com/skippyothewired">@skippyothewired</a>) is embarking on a remarkable railway adventure beginning <strong>April 28, 2012</strong>.</p>
+          <a href="http://skippyofthewired.posterous.com/"><img class="span1" src="assets/img/blog-icon-48.png"/></a><p>He'll be visiting each of the cities on the left for a few days, blogging his way across the U.S. and parts of Canada. Check out his <a id="blog_link" href="http://skippyofthewired.posterous.com/">blog at Posterous</a>.</p>
+          <a id="twitter_img" href="http://twitter.com/skippyothewired"><img class="span1" src="assets/img/twitter.png"/></a><p>Reach out on Twitter (<a id="twitter_reachout" href="http://twitter.com/skippyothewired">@skippyothewired</a>), especially if he'll be in your city! (he's looking for folks to interview)</p>
+          <a id="donate_dollar" href="http://www.indiegogo.com/Trans-incidental-Railway-Journeys"><img class="span1" src="assets/img/dollar.png"/></a><p><a id="donate_link" href="http://www.indiegogo.com/Trans-incidental-Railway-Journeys">Donate via indiegogo</a>. Help support something awesome (and get some sweet perks with your donation).</p>
           <p>Keep an eye on this page &mdash; Skippy's location will be updated as his travels unfold.</p>
         </div>
         
@@ -100,6 +100,19 @@
         po.src = 'https://apis.google.com/js/plusone.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
+    </script>
+
+    <script type="text/javascript">
+      $(function() {
+        var _gaq = _gaq || [];
+        $('#donate_button').click(function() { _gaq.push(['_trackEvent', 'donation', 'click-donate-button']); });
+        $('#donate_link').click(function() { _gaq.push(['_trackEvent', 'donation', 'click-donate-link']); });
+        $('#donate_dollar').click(function() { _gaq.push(['_trackEvent', 'donation', 'click-donate-dollar']); });
+        $('#twitter_name').click(function() { _gaq.push(['_trackEvent', 'twitter', 'click-twitter-name']); });
+        $('#twitter_img').click(function() { _gaq.push(['_trackEvent', 'twitter', 'click-twitter-img']); });
+        $('#twitter_reachout').click(function() { _gaq.push(['_trackEvent', 'twitter', 'click-twitter-reachout']); });
+        $('#blog_link').click(function() { _gaq.push(['_trackEvent', 'blog', 'click-blog-link']); });
+      });
     </script>
   </body>
 </html>
