@@ -998,6 +998,10 @@ li[class^="icon-"].icon-large:before,li[class*=" icon-"].icon-large:before{text-
 a.donate{position:absolute;top:10px;right:10px;font-size:16px;color:#333;}
 .copyright{margin-top:4em;text-align:center;color:#999;}
 .update-notice{text-align:center;padding:3px;background:#f99;border:1px solid #f66;color:#600;margin-left:20px;margin-bottom:20px;}
+.big-donate-button{text-align:center;display:block;}
+.wepay_widget{margin:0 auto;}
+.centered{text-align:center;}
+#wepay_donation_amount_selected input{display:inline;}
 .pull-right{float:right;}
 .pull-left{float:left;}
 .hide{display:none;}
